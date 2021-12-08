@@ -1,13 +1,76 @@
+:root {
+    --main-blue : #0064ed;
+    --rich-black: #0d1321;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#blue-rec{
+    width: 100%;
+    height: 75%;
+    background-color: var(--main-blue);
+}
+
+#group-logo{
+    width: 80px;
+    height: 100px;
+    position: fixed;
+    left: 20px;
+    background-color: none;
+    z-index: 5;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+}
+
 #preloader{
-    background: #fff;
-    background-size: 10%;
+    background: var(--rich-black);
     height: 100vh;
     width: 100%;
     position: fixed;
     z-index: 100;
 }
 
+@media (max-width: 768px){
+
+}
+
+
 @font-face {
     font-family: KhmerOS;
     src: url('/resource/font/KhmerOS\ .ttf');
+}
+
+@font-face {
+    font-family: KhmerOS_battambamg;
+    src: url('/resource/font/KhmerOS_battambang.ttf');
+}
+
+@font-face {
+    font-family: KhmerOS_bokor;
+    src: url('/resource/font/KhmerOS_bokor.ttf');
+}
+
+@font-face {
+    font-family: KhmerOS_content;
+    src: url('/resource/font/KhmerOS_content.ttf');
+}
+
+@font-face {
+    font-family: KhmerOS_fasthand;
+    src: url('/resource/font/KhmerOS_fasthand.ttf');
+}
+
+@font-face {
+    font-family: KhmerOS_freehand;
+    src: url('/resource/font/KhmerOS_freehand.ttf');
 }
