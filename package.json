@@ -1,0 +1,26 @@
+{
+  "name": "christlovemission",
+  "version": "1.0.0",
+  "description": "provide theological and christian studies",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sereysopea-Ung/christlovemission.git"
+  },
+  "keywords": [
+    "khmer",
+    "gospel"
+  ],
+  "author": "Ung Sereysopea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sereysopea-Ung/christlovemission/issues"
+  },
+  "homepage": "https://github.com/Sereysopea-Ung/christlovemission#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
