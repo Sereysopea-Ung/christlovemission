@@ -1,0 +1,13 @@
+#preloader{
+    background: #fff;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+@font-face {
+    font-family: KhmerOS;
+    src: url('/resource/font/KhmerOS\ .ttf');
+}
