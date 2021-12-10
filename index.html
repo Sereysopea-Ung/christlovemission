@@ -14,7 +14,13 @@
     <div id="preloader"></div>
     <script src="resource/preloader.js"></script>
 
-    <div id="bible-and-slide"></div>
+    <div id="page-container">
+        <div id="main">
+            <div id="test" style='color:white; text-align: center;'></div>
+            <script>document.getElementById('test').innerHTML=('Window width: '+ $(window).width())</script>
+        </div>
+        <div id="menu"></div>
+    </div>
 
     <nav>
         <div id="logo-div">
@@ -48,14 +54,14 @@
             </svg>
         </div>
 
-        <div id="nav">
+        <div class="bar">
             <h1 id="church-name">ក្រុមជំនុំបេសសកម្មក្តីស្រឡាញ់នៃព្រះគ្រីស្ទ</h1>
 
-            <ul>
-                <li><i class="fa-solid fa-bookmark"></i> អត្ថបទ</li>
-                <li><i class="fa-solid fa-file-lines"></i> ឯកសារ</li>
-                <li><i class="fa-solid fa-address-card"></i> អំពីយើង</li>
-                <li><i class="fa-solid fa-box"></i> ថ្វាយ</li>
+            <ul id="upper-list">
+                <li id='article'><i class="fa-solid fa-bookmark"></i> អត្ថបទ</li>
+                <li id='document'><i class="fa-solid fa-file-lines"></i> ឯកសារ</li>
+                <li id='about-us'><i class="fa-solid fa-address-card"></i> អំពីយើង</li>
+                <li id='offering'><i class="fa-solid fa-box"></i> ថ្វាយ</li>
                 <li><span id="divider"></span></li>
                 <div id='login'>ចូល</div>
             </ul>
@@ -65,14 +71,31 @@
     </nav>
 
 
-    <div id="tool-bar"></div>
+    <div id="tool-bar">
+        <div class="bar">
+            <ul id='lower-list'>
+                <li>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-location-dot"></i> ទីតាំង&nbsp;&nbsp;&nbsp;</li>
+                <li id='event'>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-info"></i> ព្រឹត្តិការណ៍​ និង ពត៌មាន&nbsp;&nbsp;&nbsp;</li>
+                <li>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-square-phone"></i> ទំនាក់ទំនង&nbsp;&nbsp;&nbsp;</li>
+                <li id='statement-of-faith'>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-scroll"></i> សេចក្តីថ្លែងការណ៍នៃជំនឿ&nbsp;&nbsp;&nbsp;</li>
+                <li id='subscribe'>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-envelope"></i> ទទួលរាល់អត្ថបទថ្មី&nbsp;&nbsp;&nbsp;</li>
+                <li id='ask'>&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-circle-question"></i> សួរសំណួរ&nbsp;&nbsp;&nbsp;</li>
+            </ul>
+            <div id="tools">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class='burger-menu'>
+                    <div class="burger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     
 
     
 
-
-
-    <script src="resource/end-preloader.js"></script>
+    <script src="/resource/responsive.js"></script>
+    <script src="/resource/burger.js"></script>
+    <script src="/resource/end-preloader.js"></script>
 </body>
 </html>
