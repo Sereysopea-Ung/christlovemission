@@ -56,6 +56,7 @@
 
 body{
     background: var(--rich-black);
+    position: relative;
 }
 
 .burger{
@@ -132,7 +133,7 @@ body{
     top: -20px;
 }
 
-html {
+html, body {
     overflow-x: hidden;
 }
 
