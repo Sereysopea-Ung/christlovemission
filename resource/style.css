@@ -55,7 +55,6 @@
 }
 
 body{
-    overflow-x: hidden;
     background: var(--rich-black);
 }
 
@@ -131,6 +130,10 @@ body{
     position: fixed;
     left: 110px;
     top: -20px;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 #login{
