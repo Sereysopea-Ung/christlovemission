@@ -1,7 +1,7 @@
 :root {
     --main-blue : #0064ed;
     --rich-black: #0d1321;
-    --sea-green: #0a8754;
+    --sea-green: #2cb046;
     --forest-green: #004f2d;
     --bleu: #128ce3;
     --orange: #ff5500;
@@ -23,6 +23,18 @@
     font-family: KhmerOS-system;
     color: #333;
     line-height: 50px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.bar > ul > :nth-child(odd):hover{
+    border-bottom: 3px solid var(--bleu);
+    color: var(--bleu);
+}
+
+.bar > ul > :nth-child(even):hover{
+    border-bottom: 3px solid #34eb58;
+    color: #2cb046;
 }
 
 .bar{
@@ -132,6 +144,10 @@ body{
     border-radius: 10px;
 }
 
+#login:hover{
+    border-bottom: none;
+}
+
 #logo-div{
     position: fixed;
     z-index: 20;
@@ -144,12 +160,18 @@ body{
 
 #lower-list > li{
     background: white,#ff7300;
-    height: 40px;
-    line-height: 40px;
+    height: 50px;
+    line-height: 50px;
     font-family: KhmerOs-system;
     text-align: center;
     color: #333;
-    border-radius: 10px;
+    border-radius: 4px;
+    transition: all 0.1s ease-in-out;
+}
+
+#lower-list > li:hover{
+    border-color:var(--orange);
+    color: var(--orange);
 }
 
 #main{
@@ -157,7 +179,7 @@ body{
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-color: white, var(--rich-black);
+    background-image: var(--rich-black);
     transition: all 0.5s ease-in-out;
 }
 
@@ -233,11 +255,6 @@ svg{
     position: relative;
 }
 
-@media (max-width: 768px){
-
-}
-
-
 @font-face {
     font-family: KhmerOS;
     src: url('/resource/font/KhmerOS\ .ttf');
@@ -296,6 +313,90 @@ svg{
 @font-face {
     font-family: KhmerOS-system;
     src: url('/resource/font/KhmerOS_sys.ttf');
+}
+
+@media (max-width: 1290px){
+    #statement-of-faith {
+        display: none;
+    }
+}
+
+@media (max-width: 1129px){
+    #document {
+        display: none;
+    }
+    #upper-list {
+        width: 400px;
+    }
+}
+
+
+@media (max-width: 1032px){
+    #subscribe {
+        display: none;
+    }
+}
+
+@media (max-width: 934px){
+    #article {
+        display: none;
+    }
+    #upper-list {
+        width: 300px;
+    }
+}
+
+@media (max-width: 828px){
+    #event {
+        display: none;
+    }
+    #about-us{
+        display: none;
+    }
+    #upper-list {
+        width: 220px;
+    }
+}
+
+@media (max-width: 746px){
+    #offering {
+        display: none;
+    }
+    #upper-list {
+        width: 100px;
+        left: -10px;
+    }
+}
+
+@media (max-width: 638px){
+    #blue-ribbon,#green-ribbon{
+        display: none;
+    }
+    #white-ribbon{
+        left: 10px;
+    }
+    .bar{
+        width: calc(100% - 90px);
+    }
+}
+
+@media (max-width: 525px){
+    #upper-list {
+        display: none;
+    }
+}
+
+@media (max-width: 482px){
+    #logo-div,#ask {
+        display: none;
+    }
+    .bar{
+        width: 100%;
+        justify-content: center;
+    }
+    #lower-list{
+        justify-content: left;
+    }
 }
 
 @media (max-width: 330px){
