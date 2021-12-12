@@ -202,7 +202,7 @@ html {
 
 nav {
     background: white;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     border-bottom: 1px solid #ccc;
     position: fixed;
@@ -234,7 +234,7 @@ nav {
 
 #tool-bar{
     background: white;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     border-bottom: 1px solid #ccc;
     position: fixed;
