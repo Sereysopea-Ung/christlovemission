@@ -13,6 +13,9 @@
     box-sizing: border-box;
 }
 
+html,body{
+    overflow-x: hidden;
+}
 .bar > ul {
     display: flex;
     align-items: center;
@@ -55,8 +58,9 @@
 }
 
 body{
+    width:100%;
     background: var(--rich-black);
-    position: relative;
+    overflow-x: hidden;
 }
 
 .burger{
@@ -133,9 +137,6 @@ body{
     top: -20px;
 }
 
-html, body {
-    overflow-x: hidden;
-}
 
 #login{
     background: var(--rich-black);
@@ -181,9 +182,9 @@ html, body {
 #main{
     padding-top: 100px;
     width: 100vw;
-    height: 100vh;
+    height: 200vh;
     position: relative;
-    background-image: var(--rich-black);
+    background: var(--rich-black);
     transition: all 0.5s ease-in-out;
 }
 
@@ -193,8 +194,28 @@ html, body {
     width: 300px;
     height: 100vh;
     background: white;
-    transition: all 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     border-left: 1px solid #ccc;
+    padding-top: 100px;
+}
+
+#menu li{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    list-style: none;
+    padding-left: 40px;
+    font-family: KhmerOS-system;
+    color: var(--rich-black);
+}
+
+.menu-opt{
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.menu-opt:hover{
+    background: #ccc;
 }
 
 .menu-open{
@@ -212,6 +233,7 @@ nav {
 
 #page-container{
     position: absolute;
+    overflow-x: hidden;
     display: flex;
 }
 
@@ -219,7 +241,7 @@ nav {
 #preloader{
     background: var(--rich-black);
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 100;
 }

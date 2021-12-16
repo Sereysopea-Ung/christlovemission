@@ -32,3 +32,7 @@ window.onload = function() {
         $(this).scrollLeft(0);
     });
 }
+
+window.addEventListener('scroll',function(e){
+    document.getElementById('menu').style.top = window.scrollY + 'px';
+});
